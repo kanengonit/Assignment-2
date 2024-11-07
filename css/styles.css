@@ -1,0 +1,157 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000814;
+    line-height: 1.6;
+}
+
+
+.earth {
+    position: relative;
+    z-index: 10;
+}
+
+.earth img {
+    width: 100%; /* Adjust size as needed */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #001d3d, #003566);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ffd60a;
+    text-align: center;
+}
+
+.myLabel1 {
+    position: absolute;
+    bottom: calc(65% + 10px);
+    color: #ffd60a;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+    z-index: 2;
+}
+
+.myLabel1:hover {
+    transform: scale(1.06);
+    text-transform: uppercase;
+}
+
+.myLabel2 {
+    position: absolute;
+    bottom: calc(75% + 10px);
+    color: #ffd60a;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+    z-index: 2;
+}
+
+.myLabel2:hover {
+    transform: scale(1.06);
+    text-transform: uppercase;
+}
+
+.myLabel3 {
+    position: absolute;
+    bottom: calc(85% + 10px);
+    color: #ffd60a;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+    z-index: 2;
+}
+
+.myLabel3:hover {
+    transform: scale(1.06);
+    text-transform: uppercase;
+}
+
+.myLabel4 {
+    position: absolute;
+    bottom: calc(94% + 10px);
+    color: #ffd60a;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+    z-index: 2;
+}
+
+.myLabel4:hover {
+    transform: scale(1.06);
+    text-transform: uppercase;
+}
+
+
+/* Layer Sections */
+.layer {
+    padding: 2rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background 0.5s ease;
+}
+
+/* Individual Layer Colors */
+#troposphere { background: linear-gradient(to bottom, #76c7c0, #001d3d); }
+#stratosphere { background: linear-gradient(to bottom, #003566, #0a9396); }
+#mesosphere { background: linear-gradient(to bottom, #001d3d, #005f73); }
+#thermosphere { background: linear-gradient(to bottom, #005f73, #023e8a); }
+
+/* Section Headings */
+.layer h2 {
+    font-size: 2rem;
+    color: #ffd60a;
+    margin-bottom: 1rem;
+}
+
+.layer p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background: #001d3d;
+    color: #ffd60a;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p, .layer p {
+        font-size: 1rem;
+    }
+
+    .layer h2 {
+        font-size: 1.5rem;
+    }
+}
